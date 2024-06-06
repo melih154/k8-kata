@@ -15,5 +15,10 @@ To connect to the redis server, run the following command:
 To list all keys in the redis server, run the following command:
 `KEYS my*`
 
+### Docker Compose
+
+To run the redis server using docker-compose, run the following command:
+`docker-compose up`
+
 ### Kubernetes
 

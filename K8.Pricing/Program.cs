@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-using ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("172.17.0.2:6379");
+using ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("redis_server_1:6379");
 IDatabase db = redis.GetDatabase();
 
 var counter = 0;

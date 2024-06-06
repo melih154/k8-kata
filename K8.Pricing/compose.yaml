@@ -1,0 +1,19 @@
+﻿version: '3'
+
+services:
+  pricing:
+    build: .
+    volumes:
+      - .:/code
+    networks:
+      - new
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+      new:
+        aliases:
+          - redis_server_1
+networks:
+    new:
